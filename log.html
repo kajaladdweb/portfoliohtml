@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+input:focus {
+  background-color: #f595e0;
+}
+
+li a:hover{
+    background-color: #f5ebeb;
+    }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #e6a7a3;
+  color: #1e25eb;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+</style>
+
+<body>
+<form action="page.html">
+    <div id="login">
+        <center>
+        <table>
+        <tr>
+        <td colspan="2" style="text-align:center;background-color:cornflowerblue;"><b><i>LOGIN FORM</i></b></td>
+        </tr>
+        <tr>
+        <td>
+        <p>User:</p>
+        </td>
+        <td>
+        <input type="text" required>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Password:</p>
+        </td>
+        <td>
+        <input type="password"  pattern=".{8,}"required>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2" style="text-align:center;">
+        <input type="submit" value="login">
+        </td>
+        </table>
+        </center>
+    </div>
+</form>
+</body>
+</html>

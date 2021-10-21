@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myform
+    {
+        background-color:pink;
+        border:2px solid black;
+        width:600px;
+        padding:20px;
+        margin:10px;
+       
+    }
+</style>
+<body>
+<center>
+    <form id="myform">
+        User name:
+        <input type="text" name="First name" placeholder="username" required>
+        <br><br>
+        password:
+        <input type="password" name="password"  pattern=".{8,}" placeholder="password"required>
+
+        <br><br> 
+        Address:
+        <textarea name="address" rows="2" cols="50" placeholder="Address" required></textarea>
+        <br><br>
+
+        
+        select the training program:
+        <input type="checkbox" name="COBOL">COBOL
+        <input type="checkbox" name="PHP">PHP
+        <input type="checkbox" name="python">PYTHON
+
+        <br><br>
+        select Group:
+        <input type="radio" name="batch1">batch1
+        <input type="radio" name="batch2">batch2
+        <input type="radio" name="batch3">batch3
+        <br><br>
+        select language:
+        <select name="language" id="language">
+            <option value="hindi"> Hindi</option>
+            <option value="English"> English</option>
+            <option value="Urdu"> Urdu</option>
+        </select>
+        <br><br>
+        upload resume:<input type="file">
+        <hr>
+        <input type="button" name="but" value="exit">
+        <input type="button" name="save" value="save">
+        <input type="button" name="reset" value="reset">
+
+    
+    </form>
+</center>
+</body>
+</html>
