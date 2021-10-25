@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    color: #2c4058
+}
+.sectiondetail{
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #5a5a5a;
+}
+
+/*popular in india*/
+.popularinindia{
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #5a5a5a;
+}
+
+.popularinindia .slider{
+    background-image: url('/opt/lampp/htdocs/html_ass_neww/india/bootstrap/images/advanture.jpg');
+}
+
+.popularinindia .card{
+    width: 80%;
+}
+.popularinindia .image{
+    width: 80%;
+    height: 100%;
+    padding-left: 35px;
+}
+
+.popularinindia .card p{
+    font-size: 14px;
+}
+
+.popularinindia .card hr{
+    margin-top: 0;
+    margin-bottom:0
+}
+
+.popularinindia .slider .leftblock{
+    width: 60%;
+}
+
+.popularinindia .slider .leftblock p{
+    background: #00000087;
+    color: #fff;
+    text-align:justify;
+}
+
+
+
+
+/* Must Visit Destinations*/
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/*immersive_experiences*/
+.immersive_experiences .card {
+    position: relative;
+}
+
+.immersive_experiences .card .cardbody{
+    position: absolute;
+    bottom: 0;
+    background-color: #00000087;
+}
+
+/*footer*/
+.footer{
+    background-color: #17406c;
+    color:#fff;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.footer hr{
+    height: 1px;
+    color: #fff;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 14px;
+}
+
+
