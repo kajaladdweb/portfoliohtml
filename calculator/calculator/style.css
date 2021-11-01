@@ -1,0 +1,64 @@
+
+	*
+	{
+		box-size:border box;
+	}
+	.container
+	{
+		align-items: center;
+		background-color: black;
+		margin-left: 500px;
+		width: 370px;
+		margin-top: 90px;
+		height: 370px;
+		border-radius: 15px;
+	
+
+	}
+	table
+	{
+		height: 365px;
+		width: 350px;
+		font-size: 18px;
+		border-color: black;
+
+
+	}	
+	input
+	{
+		border-color: black;
+	}
+	input:hover
+	{
+		background-color: gray;
+	}
+
+#sqr,#gt,#off,#mu,#root,#arr,#as,#module,#mc,#mr,#m-,#mp,#div,#ac,#seven,#eight,#nine,#mul,#ce,#four,#five,#five,#six,#sub,#on,#one,#two,#three,#zero,#double,#dot,#equal
+	{
+
+		height: 35px;
+		width: 60px;  
+	}
+	#add
+	{
+		height: 80px;
+		width: 60px;
+	}
+	#number
+	{
+		width: 350px;
+		height: 50px;
+	}
+	#gt
+	{
+		margin-left: 213px;
+	}
+	#on
+	{
+		background-color: orange;
+	}
+	#seven,#eight,#nine,#four,#five,#six,#one,#two,#three,#zero,#double,#dot
+	{
+		background-color:  #99bbff
+;
+	}

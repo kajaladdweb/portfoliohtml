@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bottstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- FontAwesome link -->
+    <script src="https://kit.fontawesome.com/cdb4175f0a.js" crossorigin="anonymous"></script>
+
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+	<title>form1</title>
+</head>
+<body>
+<form name="form1">
+<div class="container">
+	<!-- display line1-->
+<form name="form1">
+	<table>
+		<tr>
+			<td colspan="5"><input type="text" name="number" id="number"></td>
+		</tr>
+ 
+		<tr>
+			<!-- <td colspan=""><input type="button" id="gt" value="GT" onclick="form1.number.value+='GT'"></td>  -->
+			
+			 <!-- <td colspan="4"><input type="button" id="off" value="OFF" onclick="reset();">  -->
+</td>
+		</tr>
+		<tr>
+			<!-- <td><input type="button" id="arr" value="->" onclick="deleteChar(number);"></i></td> -->
+
+	    	<td><input type="button" id="div" value="/" onclick="form1.number.value+='/'"></td>
+
+	    				
+	    	<td><input type="button" id="as" value="+/-" onclick="form1.number.value+='-'"></td>
+
+
+	    	<td><input type="button" id="root" value="&#8730;" onclick="doMath();"></td>
+
+	    				
+	    	<td><input type="button" id="module" value="%" onclick="form1.number.value+='%'"></td>
+			<td colspan="4"><input type="button" id="off" value="OFF" onclick="reset();"> 
+			
+		</tr>
+
+ 
+		<!-- <tr> 
+			<td><input type="button" id="mc" value="MC" onclick="form1.number.value+='MC'"></td>
+
+	    	<td><input type="button" id="mr" value="MR" onclick="form1.number.value+='MR'"></td>
+
+	    				
+	    	<td><input type="button" id="m-" value="M-" onclick="m-();"></td>
+
+
+	    	<td><input type="button" id="mp" value="M+" onclick="m+();"></td>
+
+	    				
+	    	<td><input type="button" id="div" value="/" onclick="form1.number.value+='/'"></td>
+			
+		</tr> -->
+
+
+		<tr>
+			
+            <td><input type="button" id="sqr" value="^" onclick="form1.number.value = Math.pow(form1.number.value,2);"></td>
+
+	    	<td><input type="button" id="seven" value="7" onclick="form1.number.value+='7'"></td>
+
+	    				
+	    	<td><input type="button" id="eight" value="8" onclick="form1.number.value+='8'"></td>
+
+
+	    	<td><input type="button" id="nine" value="9" onclick="form1.number.value+='9'"></td>
+
+	    				
+	    	<td><input type="button" id="mul" value="X" onclick="form1.number.value+='*'"></td>
+			
+		</tr>
+
+
+		<tr>
+			<td><input type="button" id="ce" value="CE" onclick="reset();"></td>
+
+
+	    	<td><input type="button" id="four" value="4" onclick="form1.number.value+='4'"></td>
+	    				
+	    	<td><input type="button" id="five" value="5" onclick="form1.number.value+='5'"></td>
+
+
+	    	<td><input type="button" id="six" value="6" onclick="form1.number.value+='6'"></td>
+
+	    				
+	    	<td><input type="button" id="sub" value="-" onclick="form1.number.value+='-'"></td>
+			
+		</tr>
+
+
+		 <tr>
+		
+			<td><input type="button" id="on" value="ON" onclick="start(number);"></td>
+
+	    	<td><input type="button" id="one" value="1" onclick="form1.number.value+='1'"></td>
+		
+	    	<td><input type="button" id="two" value="2" onclick="form1.number.value+='2'"></td>
+
+
+	    	<td><input type="button" id="three" value="3" onclick="form1.number.value+='3'"></td>
+
+	    	<td rowspan="2"><input type="button" id="add" value="+" onclick="form1.number.value+='+'"></td>
+
+
+			
+		</tr>
+
+		<tr>
+			<td><input type="button" id="zero" value="0" onclick="form1.number.value+='0'"></td>
+
+	    	<td><input type="button" id="double" value="00" onclick="form1.number.value+='00'"></td>
+
+	    				
+	    	<td><input type="button" id="dot" value="." onclick="form1.number.value+='.'"></td>
+
+
+	    	<td><input type="button" id="equal" value="=" onclick="result();"></td>			
+		</tr>
+
+	</table> 
+</form>
+</div>
+
+	<Script>
+	<link rel="stylesheet" type="text/css" href="E:\KAJAL\add_project\js\bootstrap.min.js"></Script>
+	<link rel="stylesheet" type="text/css" href="E:\KAJAL\add_project\js\bootstrap.js">
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function result(){
+
+		try
+		{
+
+			document.getElementById("number").value = eval(document.getElementById("number").value);	
+
+		}
+		catch
+		{
+			document.form1.number.value = "Error!";
+
+		}
+		// document.getElementById("number").value = eval(document.getElementById("number").value);	
+	}
+
+	function start(number)
+	{
+
+		var a=document.form1.number.value = 0;
+
+	
+	}
+
+
+	function reset(){
+		document.getElementById("number").value = '';
+
+		document.getElementById("button").disabled = true;
+
+	}
+
+
+
+function deleteChar(input) {
+	input.value = input.value.substring(0, input.value.length - 1)
+}
+
+
+	
+	function doMath()
+	{
+		var inputNum1=document.form1.number.value;
+		var result = Math.sqrt(inputNum1);
+		document.form1.number.value = result;
+	}
+
+// function sqr() 
+    // {
+
+    // let numberElement = document.getElementById("number").value;
+    // let result=Math.pow(numberElement,2);
+    // document.getElementById("number").value = result;
+
+// 	{
+
+	
+//         var inputNum1=document.form1.number.value;
+// 		var result = Math.pow(inputNum1,2);
+// 		document.form1.number.value = result;
+
+// }
+
+
+    
+
+
+
+// 		function m+() {
+			
+// 	if (document.form1.number.value =='') { return }
+
+// 	document.form1.memory.value += '+'+document.form1.number.value;
+// 	document.form1.memory.value=eval(document.form1.memory.value);
+
+// 	eqFlag=true;
+// 	document.form1.mem_win.value=document.form1.memory.value;
+
+// }
+
+
+
+
+// function m-() {
+
+//   if (document.form1.number.value =='') { return }
+
+//   document.form1.memory.value += '-'+document.form1.number.value;
+
+//   document.form1.memory.value=eval(document.form1.memory.value);
+
+//   eqFlag=true;
+
+//   document.form1.mem_win.value=document.form1.memory.value;
+
+// }
+
+
+
+
+// function mr() {
+
+//   document.form1.number.value = document.form1.memory.value;
+
+//   eqFlag=true;
+
+// }
+
+  
+
+// function mc() {
+
+//   document.Calc.memory.value=0;
+
+//   document.Calc.mem_win.value='0'; 
+
+// }
+
+
+
+
+
+
+</script>
+
+
