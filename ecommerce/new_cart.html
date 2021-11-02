@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bottstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/opt/lampp/htdocs/html_ass_neww/3rd_project/css/bootstrap.min.css"> -->
+
+    <!-- FontAwesome link -->
+    <script src="https://kit.fontawesome.com/cdb4175f0a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+      
+.cart-page
+{
+    margin:80px auto;
+
+}
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+th
+{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td
+{
+    padding: 10px 5px;
+}
+td input
+{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td input:hover
+{
+    border-color:#ff523b;
+}
+td img
+{
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+.order
+{
+  margin-left: 1100px;
+}
+
+    </style>
+    <title>Product detail</title>
+</head>
+<body>
+    
+        <!--navigation bar -->
+        <nav class="navbar navbar-expand-sm  navbar-light">
+            <div class="container">
+                <ul class="navbar-nav">
+                     <li>
+                        <img src="images/logo.png" alt="logo">
+                        <!-- <img src="images/logo.png" class="menu-icon"> -->
+                    </li>
+                </ul>
+        
+            
+                <div class="collapse navbar-collapse" id="mynavbar" >
+                    <ul class="navbar-nav me-auto justify-content-end col-lg-12">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark"   href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="product.html">Products</a>
+                    </li>
+                  <!--   <li class="nav-item">
+                        <a class="nav-link text-dark" href="">About</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="">Login</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    </ul>
+                </div>
+             </div>
+        </nav>
+        <!-- navigation bar ends -->
+
+        <!-- cart page -->
+        <div class="container cart-page">
+          <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total</th>
+               
+             
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p class="mx-2"> Red Printed Tshirt</p>
+                            <small class="mx-2 sm">price $50.00</small>
+                            
+                        </div>
+                    </div>                  
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/pro-3.jpg">
+                        <div>
+                            <p class="mx-2"> HRX Gray Trackpants</p>
+                            <small class="mx-2">price $60.00</small>
+                            
+                        </div>
+                    </div>                  
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$60.00</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/pro-4.jpg">
+                        <div>
+                            <p class="mx-2">HRX Printed Tshirt</p>
+                            <small class="mx-2">price $86.00</small>
+                            
+                        </div>
+                    </div>                  
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$86.00 </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/pro-2.jpg">
+                        <div>
+                            <p class="mx-2"> Blue Printed Shoes</p>
+                            <small class="mx-2">price $90.00</small>
+                            
+                        </div>
+                    </div>                  
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$90.00</td>
+            </tr>
+              
+          </table>
+          <div>
+             <!--  <input type="button" name="order" value="Place Order"  class="button-order" > -->
+             <a href="order.html" class="order">Place Order</a>
+          </div>
+        </div>
+
+      
+
+          <!-- cart page ends -->
+
+  <!-- footer starts -->
+  <div class="footer1">
+	<div class="container">
+    <div class="row">
+      <div class="col-4 pt-4 footer11">
+        <h5 class="footer-h5"><b>Download Our App</b></h5>
+        <h6 class="footer-h6 mt-3"> Download the App for Android and ios phone</h6>
+        <img src="images/play-store.png" id="footer-img" alt="playstore" >
+         <img src="images/app-store.png" id="footer-img" alt="appstore">
+      </div>
+  
+      <div class="col-4 pt-4 footer12">
+        <img src="images/logo.png" id="footer-img2" alt="logo">
+           <h6 class="hs mt-2 text-center"> Our purpose is to make sustainiblity make the pleasure and Benefits of sports Accesible to the Many.</h6>
+      </div>
+
+
+  
+  
+    <div class="col-4 pt-4 footer13">
+        <h5 class="ftrh5"><b> Follow Us</b></h5>
+        <ul class="mt-3 footer-ul">
+	       <a href="#"><i class="fab fa-facebook-f" id="footer-i"></i></a>
+ 		  <a href="#"><i class="fab fa-instagram" id="footer-i"></i></a>
+          <a href="#"><i class="fab fa-youtube" id="footer-i"></i></a>
+           <a href="#"><i class="fab fa-twitter" id="footer-i"></i></a>
+        </ul>
+    </div>
+
+      <hr class="footer-hr">
+      <p class="copyright"><b>Copyright 2020 </b></p>
+    
+    </div>
+  </div>
+</div>
+    <!-- footer ends -->
+
+</body>
+</html>
