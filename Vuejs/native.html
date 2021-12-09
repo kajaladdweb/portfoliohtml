@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events binding</title>
+	
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="native.js" defer></script>
+  </head>
+  <body>
+    <section id="events">
+      <h2>Events in Action</h2>
+       <!-- 
+      <button v-on:click="counter++">Add</button>
+      <button v-on:click="counter--">Remove</button> 
+
+      <p>Result: {{ counter }}</p> -->
+
+      <input type="text" v-on:input="setName">
+      <p>Your name: {{ name }}</p>
+    </section>
+  </body>
+</html>

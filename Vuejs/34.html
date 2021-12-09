@@ -1,0 +1,53 @@
+    <!--adding dynamic css  -->
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Events binding</title>
+
+    <link rel="stylesheet" href="styles.css" />
+     
+     <script src="https://unpkg.com/vue@next"></script>
+     <script src="34.js" defer></script>
+   </head>
+   <body>
+    <h2>Events in Action</h2>
+     <section id="styling"> 
+
+        <div class="demo"
+        :class="{active: boxASelected}"
+        @click="boxSelected('A')"
+        >
+
+        </div>
+<!--        
+        <div :class="boxASelected ? 'demo active' : 'demo'"  @click="boxSelected('A')"></div> -->
+
+        <!-- <div :class="{demo:true, active:boxASelected}"
+        @click="boxASelected('A')">
+        </div> -->
+<!-- 
+
+        <div class="demo"  @click="boxSelected('B')"></div>
+        <div class="demo"  @click="boxSelected('C')"></div> -->
+
+
+        <div class="demo"
+        :class="{active: boxBSelected}"
+        @click="boxSelected('B')"
+        >
+ 
+
+        
+        <div class="demo"
+        :class="{active: boxCSelected}"
+        @click="boxSelected('C')"
+        >
+     </section>
+   </body>
+ </html>
+ 
+ 
+ 
+ 

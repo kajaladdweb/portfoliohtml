@@ -1,0 +1,43 @@
+<!-- Print full name
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events binding</title>
+	
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="30-watchers.js" defer></script>
+  </head>
+  <body>
+    <section id="events"> 
+      <h2>Events in Action</h2>
+     
+
+
+      <button v-on:click="add(10)">Add 10</button>
+      <button v-on:click="reduce(5)">Subtract 5</button>
+      <p>Result: {{ counter }}</p>
+      <input type="text" v-bind:value="name"
+      v-model="name">
+       <input type="text" v-bind:value="lastName"
+      v-model="name">
+       <!-- v-on:input="setName($event, 'Schwarzmuller')"
+        v-on:keyup.enter="confirmInput()"> -->
+        <button v-on:click="resetInput">Reset</button>
+
+      <p>Your name: {{ fullname }}</p>
+
+     <!--  <form v-on:submit.prevent="submiForm">
+        <input type="text">
+        <button>signup</button>
+        
+      </form> -->
+    </section>
+  </body>
+</html>
+
+
+
